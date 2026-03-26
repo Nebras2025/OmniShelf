@@ -6,3 +6,4 @@ books.db
 .venv/
 __pycache__/
 *.py[cod]
+final_cleaned_data.csv
