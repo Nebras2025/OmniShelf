@@ -7,3 +7,4 @@ books.db
 __pycache__/
 *.py[cod]
 final_cleaned_data.csv
+book.db
