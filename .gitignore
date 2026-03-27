@@ -8,3 +8,5 @@ __pycache__/
 *.py[cod]
 final_cleaned_data.csv
 book.db
+book2.db
+data_for_model.csv
