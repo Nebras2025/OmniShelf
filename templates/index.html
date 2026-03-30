@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book AI</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+
+            /* Background image */
+            background-image: url("{{ url_for('static', filename='Vinland-background-image021.png') }}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            /* Move form to right */
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding-top: 60px;
+            padding-right: 300px;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.88);
+            padding: 30px;
+            width: 380px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.25);
+            backdrop-filter: blur(5px);
+        }
+
+        h1 {
+            margin-bottom: 25px;
+            color: #222;
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 18px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+        button {
+            background: #2e7d32;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #1b5e20;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/predict" method="POST">
+        <h1>📚 Book AI Recommendation</h1>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" step="0.01" required>
+
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value="">🔽 Select Rating</option>
+            <option value="1">⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
+
+        <button type="submit">Recommend</button>
+    </form>
+
+</body>
+</html>
