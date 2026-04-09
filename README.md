@@ -1,4 +1,4 @@
-<img src="Screenshot 2026-04-08 202256-1.png" width="200">
+<img width="1904" height="948" alt="Image" src="https://github.com/user-attachments/assets/4823e97f-eb41-4fc4-83ac-8c5566d8904c" />
 
 # OmniShelf 📚
 
