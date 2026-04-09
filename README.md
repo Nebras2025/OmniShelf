@@ -1,4 +1,4 @@
-![alt text](<Screenshot 2026-04-08 202256-1.png>)
+<img src="Screenshot 2026-04-08 202256-1.png" width="200">
 
 # OmniShelf 📚
 
