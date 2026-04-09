@@ -1,3 +1,5 @@
+![alt text](<Screenshot 2026-04-08 202256-1.png>)
+
 # OmniShelf 📚
 
 **A Full-Stack Book Recommendation System**
